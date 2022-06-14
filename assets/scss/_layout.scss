@@ -1,0 +1,39 @@
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $font-color-base;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: $container-padding-y $container-padding-x;
+}
+.container-fluid {
+    padding: 0 $container-fluid-padding-x;
+}
+#content {
+    transition: $sidebar-transition;
+    &.sidebar-minimized {
+        margin-left: $sidebar-minimized-width;
+    }
+    &.sidebar-maximized {
+        margin-left: $sidebar-maximized-width;
+    }
+}
+.main-content {
+    margin-top: 2rem;
+}
+
+h1,h2,h3,h4,h5,h6 { color: $header-color }
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.dark {
+    body {
+        color: $font-color-base-dark
+    }
+    h1,h2,h3,h4,h5,h6 {
+        color: $header-dark-color;
+    }
+}

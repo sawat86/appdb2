@@ -1,0 +1,36 @@
+/**
+* Theme Name: Nuxewind
+* Author: zuramai
+* Author URL: https://ahmadsaugi.com
+* Version: 0.0.1
+*/
+
+
+/**
+*
+* TABLE OF CONTENTS
+* 1. Variables
+*
+* 99. Utilities
+*/
+
+
+// 1. Variables
+@import "./variables";
+
+@import "./layout";
+@import "./components/card";
+@import "./components/checkbox";
+@import "./components/dropdown";
+@import "./components/header";
+@import "./components/loading";
+@import "./components/input";
+@import "./components/modal";
+@import "./components/progress";
+@import "./components/sidebar";
+@import "./components/select";
+@import "./components/table";
+
+@import "./misc/transitions";
+// 99. Utilities
+@import "./utilities";

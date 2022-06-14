@@ -1,0 +1,36 @@
+.sidebar-topbar {
+    height: $topbar-height
+}
+.sidebar-wrapper {
+    transition: $sidebar-transition;
+    width: $sidebar-minimized-width;
+    
+    .sidebar-item {
+        .sidebar-link {
+            transition: all .6s;
+            justify-content: center;
+            &.nuxt-link-exact-active {
+                background-color: $sidebar-link-active-bg;
+            }
+            .sidebar-menu-text {
+                margin-left: 1rem;
+            }
+        }
+    }
+    &.sidebar-open {
+        width: $sidebar-maximized-width;
+        & + #main-header {
+            margin-left: $sidebar-maximized-width;
+        }
+        .sidebar-link {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: flex-start;
+            .sidebar-menu-text {
+            }
+        }
+    }
+    & + #main-header {
+        margin-left: $sidebar-minimized-width;
+    }
+}
